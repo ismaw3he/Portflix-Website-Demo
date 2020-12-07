@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.loader-container{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* animation-name: darking; */
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    overflow-y: hidden;
+}
+#Layer_1{
+    height: 100vh;
+    overflow: visible
+}
+
+.squares{
+    position: absolute;
+    
+}
+
+#moving-3{
+    animation-name: jump;
+    animation-duration: 0.7s;
+    animation-iteration-count: 4;
+}
+#moving-2,
+#moving-1{
+    animation-name: move;
+    animation-duration: 0.7s;
+    animation-iteration-count: 4;
+}
+
+#finger{
+    fill: #32b7e1;
+    height: 130px;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    opacity: 0;
+    transform: rotateZ(0deg);
+    animation-duration: 1.0s;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+}
+
+@keyframes finger-move {
+    0% {
+        transform: rotateZ(0deg) translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: rotateZ(0deg) translateY(-50%);
+        opacity: 0;
+    }
+}
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(30px);
+    }
+}
+@keyframes jump {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    33% {
+        transform: translateY(20px) translateX(0);
+    }
+    66%{
+        transform: translateY(20px) translateX(-63px);
+    }
+    100%{
+        transform: translateY(0) translateX(-63px);
+    }
+}
+@keyframes glow {
+    0% {
+        fill: #165568;
+    }
+    100%{
+        fill:#2acdff;
+    }
+}
+
+@keyframes get-blue {
+    0% {
+        fill: #0c0f18;
+    }
+    100%{
+        fill:#32b7e1;
+    }
+}
+@keyframes darking {
+    0% {
+        background-color: white;
+    }
+    100%{
+        background-color: black;
+    }
+}

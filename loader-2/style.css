@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#construction{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    bottom: 100px;
+    color: #2acdff;
+    font-size: 25px;
+}
+.loader-container{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: darking;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+#Layer_1{
+    height: 100vh;
+}
+.cls-1 {
+    fill: #0c0f18;
+    animation-name: get-blue;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+#moving-1,
+#moving-2,
+#moving-3{
+    animation-name: glow;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes glow {
+    0% {
+        fill: #165568;
+    }
+    100%{
+        fill:#2acdff;
+    }
+}
+
+@keyframes get-blue {
+    0% {
+        fill: #0c0f18;
+    }
+    100%{
+        fill:#32b7e1;
+    }
+}
+@keyframes darking {
+    0% {
+        background-color: white;
+    }
+    100%{
+        background-color: black;
+    }
+}
