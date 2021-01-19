@@ -1,0 +1,264 @@
+@font-face{
+    font-family: SF;
+    src: url("../fonts//FontsFree-Net-SFProDisplay-Regular.ttf");
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: SF;
+}
+
+
+header, footer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+header h1{
+    font-size: 60px;
+}
+
+.animation{
+    height: 300vh;
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+#trigger{
+    position: absolute;
+    width: 40%;
+    height: 90vh;
+    bottom: 0;
+    left: 0;
+}
+
+
+.loader-container{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    position: relative;
+    overflow: hidden;
+}
+#Layer_1{
+    height: 100vh;
+    width: 100vw;
+
+}
+.cls-1{
+    fill: #0c0f18;
+    
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+#moving-3{
+    animation-name: jump;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+#moving-2,
+#moving-1{
+    animation-name: move;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+}
+#rectangle{
+    position: absolute;
+    top: 50px;
+    left: -20px;
+    width: 12px;
+    height: 8px;
+    border: 3px solid #32b7e1;
+    border-radius: 3px;
+    animation-name: glowBorder;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(30px);
+    }
+}
+@keyframes jump {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    33% {
+        transform: translateY(20px) translateX(0);
+    }
+    66%{
+        transform: translateY(20px) translateX(-63px);
+    }
+    100%{
+        transform: translateY(0) translateX(-63px);
+    }
+}
+@keyframes darking {
+    0% {
+        background-color: white;
+    }
+    100%{
+        background-color: black;
+    }
+}
+@keyframes glow {
+    0% {
+        fill: #165568;
+    }
+    100%{
+        fill:#2acdff;
+    }
+}
+@keyframes glowBorder {
+    0% {
+        border-color: #165568;
+    }
+    100%{
+        border-color:#2acdff;
+    }
+}
+@keyframes get-blue {
+    0% {
+        fill: #0c0f18;
+    }
+    100%{
+        fill:#32b7e1;
+    }
+}
+
+
+#apple-menu{
+    width: 737px;
+    height: 82px;
+    position: fixed;
+    bottom: -150px;
+    left: calc(50% - 360px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 30px;
+    background-color: #5d5d5d54;
+    transition: all 0.2s;
+}
+.apps{
+    width: 60px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+}
+#chrome{
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    background-image: url("../img/chrome.png");
+}
+#facebook{
+    width: 45px;
+    height: 45px;
+
+    background-image: url("../img/facebook.png");
+}
+#firefox{
+    width: 50px;
+    background-image: url("../img/firefox.png");
+}
+#gmail{
+    width: 50px;
+    height: 43px;
+    background-image: url("../img/gmail.png");
+}
+#instagram{
+    width: 45px;
+    height: 45px;
+
+    background-image: url("../img/instagram.png");
+}
+#speed{
+    width: 45px;
+    background-image: url("../img/speed.png");
+}
+#whatsapp{
+    width: 50px;
+    background-image: url("../img/whatsapp.png");
+}
+#youtube{
+    width: 58px;
+    height: 40px;
+    background-image: url("../img/youtube.png");
+}
+@keyframes up {
+    0% {
+        margin-bottom: 0px;
+        transform: scale(1);
+    }
+    100%{
+        margin-bottom: 40px;
+        transform: scale(1.2);
+    }
+}
+@keyframes up {
+    0% {
+        margin-bottom: 40px;
+        transform: scale(1.2);
+    }
+    100%{
+        margin-bottom: 0px;
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+
+
+.section{
+    /* border:  2px solid blue; */
+    padding: 30px;
+    margin: 50px;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+  /* border:  2px solid red; */
+  width: 90%;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 65px;
+  font-weight: bold;
+  color: white;
+
+}
+
+
+.menu-controllers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid green; */
+}
+
+.controller{
+    width: 20px;
+    height: 10px;
+    /* border: 1px solid red; */
+}
