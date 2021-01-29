@@ -32,7 +32,7 @@ setTimeout(() => {
                     "value": "#32b7e1"
                 },
                 "shape": {
-                    "type": "circle",
+                    "type": "edge",
                     "stroke": {
                         "width": 0,
                         "color": "#000000"
@@ -41,7 +41,7 @@ setTimeout(() => {
                         "nb_sides": 5
                     },
                     "image": {
-                        "src": "img/github.svg",
+                        "src": "../img/rectangle.png",
                         "width": 100,
                         "height": 100
                     }
@@ -95,7 +95,7 @@ setTimeout(() => {
                         "mode": "repulse"
                     },
                     "onclick": {
-                        "enable": true,
+                        "enable": false,
                         "mode": "push"
                     },
                     "resize": true
