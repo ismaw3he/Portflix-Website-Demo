@@ -282,7 +282,7 @@ header h1{
     height: 1300px; */
     /* width: 730px; */
     width: 115%;
-    height: 1550px;
+    height: 1950px;
     border-radius: 75px;
     /* padding-top: 8px; */
     margin: 0px 14px 0px 14px;
@@ -294,7 +294,7 @@ header h1{
     left: -100px;
 }
 .mobile-section{
-    height: 400vh;
+    height: 530vh;
     background-color: #fff;
     position: relative;
     overflow: hidden;
@@ -304,10 +304,9 @@ header h1{
 }
 #mobile-trigger{
     position: absolute;
-    bottom: 200vh;
+    top: 700px;
     width: 10px;
     height: 10px;
-    background-color: red;
 }
 .speed-test-container{
     display: none;
@@ -359,3 +358,98 @@ header h1{
   .speed-value{
       font-size: 60px;
   }
+
+  .animating-text-container{
+    bottom: 1650px;
+    width: 50vw;
+    position: absolute;
+    /* left: 90px; */
+    right: 100px;
+    font-size: 30px;
+    /* opacity: 0; */
+    
+  }
+  .animating-text-container-header{
+    opacity: 0;
+    transform: translateY(-100px);
+    font-size: 75px;
+  }
+  .animating-text-container-paragraph{
+    opacity: 0;
+    font-size: 45px;
+    transform: translateY(200px);
+  }
+  .animating-text-container-header-second{
+      opacity: 0;
+      transform: translateY(250px);
+      font-size: 75px;
+  }
+
+
+  .animation-text-second-container{
+    bottom: 400px;
+    width: 50vw;
+    position: absolute;
+    /* left: 90px; */
+    left: 260px;
+    font-size: 30px;
+    /* opacity: 0; */
+    
+  }
+  .animation-text-header{
+    opacity: 0;
+    transform: translateY(-250px);
+    font-size: 105px;
+  }
+  .animation-text-header-1{
+    opacity: 0;
+    font-size: 105px;
+    transform: translateY(-20px);
+  }
+  .animation-text-header-2{
+      opacity: 0;
+      transform: translateY(-60px);
+      font-size: 105px;
+  }
+
+
+  .section-tv{
+    height: 500vh;
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: -1;
+    overflow: hidden;
+  }
+.tv-border{
+    background-image: url("../img/winter.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+}
+  .tv-img{
+    position: absolute;
+    width: 105%;
+    top: -25px;
+    left: -25px;
+  }
+  
+.winter-img{
+    position: absolute;
+    width: 104%;
+    top: -18px;
+    left: -17px;
+    z-index: -1;
+}
+  #tv-trigger{
+      width: 20px;
+      height: 20px;
+      background-color: red;
+      position: absolute;
+      top: 170px;
+  }
+
+
+

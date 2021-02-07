@@ -161,10 +161,10 @@ window.addEventListener("scroll", () => {
     //     chromeIcon.style.animationName="down"
     // }
 
-    if(window.scrollY >= 1200){
-        rectangleForHide.style.border="none"
-    }
-    else if(window.scrollY < 1200){
-        rectangleForHide.style.border="3px solid #32b7e1"
-    }
+    // if(window.scrollY >= 1200){
+    //     rectangleForHide.style.border="none"
+    // }
+    // else if(window.scrollY < 1200){
+    //     rectangleForHide.style.border="3px solid #32b7e1"
+    // }
 })
