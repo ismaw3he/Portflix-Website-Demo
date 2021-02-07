@@ -1,18 +1,14 @@
 // const flightPath6 = {
-//     curviness: 1.25,
-//     autoRotate: true,
+//     // curviness: 1.25,
+//     // autoRotate: true,
 //     values: [
-//         {x: 100, y: 400},
-//         {x: 150, y: 450},
-//         {x: 200, y: 500},
-//         {x: 400, y: 700},
-//         {x: 650, y: 720},
-//         {x: 700, y: 650},
-//         {x: 650, y: 550},
-//         {x: 100, y: 720},
-//         {x: 200, y: 1190},
-//         {x: 300, y: 1290},
-//         {x: 400, y: 1390},
+//         {x: 0, y: 800},
+//         {x: 0, y: 800},
+//         {x: 0, y: 0},
+//         {x: 0, y: 0},
+//         {x: 0, y: 0},
+//         {x: 0, y: 0},
+//         {x: 0, y: 0},
 //         // {x: 450, y: 1190},
 //         // {x: 490, y: 1190},
 //         // {x: 510, y: 1190},
@@ -29,19 +25,49 @@ tween6.add(
     TweenLite.to('.tv-border', 100 ,{
         // bezier: flightPath6,
         // ease: Power1.easeInOut,
-        transform: "translateY(1200px) scale(0.4)"
+        transform: "translateY(800px) scale(0.4)"
     })
 )
 
+tween6.add(
+    TweenLite.to('.tv-text-header', 100 ,{
+        opacity: 1,
+        transform: "translateY(-100px)"
+    },0)
+)
+tween6.add(
+    TweenLite.to('.tv-text-header',100 ,{
+        opacity: 0,
+        transform: "translateY(-150px)"
+    },0)
+)
+
+tween6.add(
+    TweenLite.to('.tv-text-header-2', 100 ,{
+        opacity: 1,
+        transform: "translateY(1400px)"
+    },0)
+)
+
+tween6.add(
+    TweenLite.to('.tv-text-header-2',100 ,{
+        opacity: 0,
+        transform: "translateY(1300px)"
+    },0)
+)
 const controller6 = new ScrollMagic.Controller();
 
 const scene6 = new ScrollMagic.Scene({
     triggerElement: '#tv-trigger',
-    duration: 700,
+    duration: 850,
     triggerHook: 0.2 
 
 })
 .setTween(tween6)
-.addIndicators()
+// .addIndicators()
 // .setPin('#tv-trigger')
 .addTo(controller6)
+
+window.addEventListener("scroll", ()=>{
+    console.log(window);
+})

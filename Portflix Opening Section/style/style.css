@@ -419,7 +419,7 @@ header h1{
     position: sticky;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     z-index: -1;
     overflow: hidden;
   }
@@ -428,6 +428,7 @@ header h1{
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
+    position: relative;
 }
   .tv-img{
     position: absolute;
@@ -452,4 +453,18 @@ header h1{
   }
 
 
-
+.tv-text-container{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    font-size: 100px;
+    text-align: center;
+}
+.tv-text-header{
+    opacity: 0;
+}
+.tv-text-header-2{
+    opacity: 0;
+    transform: translateY(1500px);
+}
