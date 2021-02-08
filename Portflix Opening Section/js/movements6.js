@@ -22,7 +22,7 @@
 const tween6 = new TimelineLite();
 
 tween6.add(
-    TweenLite.to('.tv-border', 100 ,{
+    TweenLite.to('.tv-border', 200 ,{
         // bezier: flightPath6,
         // ease: Power1.easeInOut,
         transform: "translateY(800px) scale(0.4)"
@@ -55,11 +55,19 @@ tween6.add(
         transform: "translateY(1300px)"
     },0)
 )
+
+tween6.add(
+    TweenLite.to('#canvas-container',200 ,{
+        opacity: 1
+    },0)
+)
+
+
 const controller6 = new ScrollMagic.Controller();
 
 const scene6 = new ScrollMagic.Scene({
     triggerElement: '#tv-trigger',
-    duration: 850,
+    duration: 1250,
     triggerHook: 0.2 
 
 })
@@ -68,6 +76,3 @@ const scene6 = new ScrollMagic.Scene({
 // .setPin('#tv-trigger')
 .addTo(controller6)
 
-window.addEventListener("scroll", ()=>{
-    console.log(window);
-})

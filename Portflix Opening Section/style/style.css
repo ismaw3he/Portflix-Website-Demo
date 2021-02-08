@@ -413,9 +413,91 @@ header h1{
   }
 
 
+  .section-prices{
+      height: 700px;
+      width: 100%;
+}
+
+.price-category-container{
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category-bottom-line{
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: #e7e7e7;
+}
+
+.price-category-list{
+   height: 100px;
+   width: 100%;
+   font-size: 23px;
+   display: flex;
+   align-items: center;
+}
+
+.price-category-item{
+    cursor: pointer;
+    margin-right: 50px;
+    width: fit-content;
+}
+.active-item{
+    border-bottom: 4px solid black;
+    margin-bottom: -24px;
+    z-index: 1;
+    padding-bottom: 20px;
+}
+
+.prices-content-info{
+    color: #888;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 15px;
+    width: 700px;
+    margin-left: 5%;
+}
+
+.prices-section-header{
+    margin-left: 5%;
+    font-size: 32px;
+    margin-top: 45px;
+}
+.prices-content-container{
+    transition: all 0.3s;
+}
+.prices-list{
+    margin-left: 5%;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+
+}
+
+.price-single-container{
+    margin-right: 50px;
+}
+.service{
+    font-size: 60px;
+}
+.price{
+    font-size: 29px;
+    color: #888;
+}
+
+
+
+
+
   .section-tv{
     height: 500vh;
-    background-color: #000;
+    background-color: #08080a;
     position: sticky;
     top: 0;
     left: 0;
@@ -468,3 +550,34 @@ header h1{
     opacity: 0;
     transform: translateY(1500px);
 }
+
+
+#hero-lightpass {
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+    /* transform: translate(-50%, -50%); */
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+
+  #canvas-container{
+      height: 125vh;
+      width: 100%;
+      transition: opacity 0.5s;
+      opacity: 0;
+  }
+
+  #rectangle-2{
+    position: absolute;
+    top: 50px;
+    left: -20px;
+    width: 12px;
+    height: 8px;
+    border: 3px solid #32b7e1;
+    border-radius: 3px;
+    animation-name: glowBorder;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
