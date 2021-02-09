@@ -135,17 +135,23 @@ header h1{
 
 
 #apple-menu{
+    /* top: 0; */
     width: 737px;
     height: 82px;
     position: fixed;
     bottom: -150px;
     left: calc(50% - 360px);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     border-radius: 30px;
     background-color: #5d5d5d54;
     transition: all 0.2s;
+    display: block;
+}
+#apple-menu-list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .apps{
     width: 60px;
@@ -445,7 +451,7 @@ header h1{
 
 .price-category-item{
     cursor: pointer;
-    margin-right: 50px;
+    margin-right: 85px;
     width: fit-content;
 }
 .active-item{
@@ -529,7 +535,6 @@ header h1{
   #tv-trigger{
       width: 20px;
       height: 20px;
-      background-color: red;
       position: absolute;
       top: 170px;
   }

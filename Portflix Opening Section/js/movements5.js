@@ -52,6 +52,15 @@ tween5.add(
     })
 )
 tween5.add(
+    TweenLite.to('#apple-menu', 5 ,{
+        // width: "760px"    ,
+        // transform: "translateY(-150px)"
+        position: "fixed",
+        bottom: "35px"
+            // backgroundImage: 'url("../img/smartphone.png")  '
+    })
+)
+tween5.add(
     TweenLite.to('#chrome', 5 ,{
         // width: "760px"    ,
         transform: "translateY(-25px)"
@@ -110,7 +119,9 @@ tween5.add(
 tween5.add(
     TweenLite.to('#apple-menu',5 ,{
         // width: "760px"    ,
-        transform: "translateY(1500px)"
+        // transform: "translateY(200px)"
+        position: "fixed",
+        bottom: "-150px"
             // backgroundImage: 'url("../img/smartphone.png")  '
     })
 )
@@ -128,7 +139,8 @@ tween5.add(
 )
 tween5.add(
     TweenLite.to('#apple-menu', 1 ,{
-        display: "none"
+        // display: "none",
+        opacity: "0"
     })
 )
 tween5.add(

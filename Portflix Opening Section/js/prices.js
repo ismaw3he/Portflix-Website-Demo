@@ -122,7 +122,7 @@ const content = [
 `,
 
 `
-<p class="prices-content-info">EPON/GPON sistemləri ilə artıq həyət evləri də sürətli internetdən faydalanacaq. Bu texnologiya vasitəsi ilə həyət evlərinə də sürətli Fiber Optik internet xidməti göstəririk</p>
+<p class="prices-content-info">GPON sistemi ilə artıq həyət evləri də sürətli internetdən faydalanacaq. Bu texnologiya vasitəsi ilə həyət evlərinə də sürətli Fiber Optik internet xidməti göstəririk</p>
 
 <h2 class="prices-section-header">İnternet paketləri</h2>
 
