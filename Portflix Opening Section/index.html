@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/speed.png">
     <link rel="stylesheet" href="./style/all.css">
     <link rel="stylesheet" href="./style/particle.css">
     <link rel="stylesheet" href="./style/style.css">
-    <title>Document</title>
+    
+    <title>Portflix</title>
 </head>
 
 <body>
@@ -46,69 +48,7 @@
         </div>
     </header>
     <!-- **********************************Mobile section*********************** -->
-    <!-- <div class="mobile-section">
 
-        <div class="mobile-cover">
-            <div class="frame"></div>
-
-            <section class="animation">
-
-                <div class="section section-1">
-
-                    <div class="box box-1">Fiber Optik Internetdən həzz al!</div>
-                </div>
-                <div class="menu-controllers">
-                    <div class="controller"></div>
-                    <div class="controller"></div>
-                    <div class="controller"></div>
-                    <div class="controller"></div>
-                </div>
-
-                <div id="rectangle"></div>
-
-
-
-
-
-
-                <div id="apple-menu">
-                    <div id="apple-menu-list">
-                        <div id="chrome" class="apps"></div>
-                        <div id="facebook" class="apps"></div>
-                        <div id="gmail" class="apps"></div>
-                        <div id="speed" class="apps"></div>
-                        <div id="instagram" class="apps"></div>
-                        <div id="whatsapp" class="apps"></div>
-                        <div id="youtube" class="apps"></div>
-                    </div>
-                </div>
-
-            </section>
-            <div class="speed-test-container">
-                <img src="./img/speedtestBCK.png" class="speed-image" alt="speed">
-
-            </div>
-        </div>
-        <div class="animating-text-container">
-            <h1 class="animating-text-container-header">FTTx texnologiyası ilə </h1>
-            <p class="animating-text-container-paragraph">
-                Fiber optik şəbəkədə ötürülən informasiyanın həcmi digər şəbəkələrə nisbətən qat-qat yüksəkdir.
-
-            </p>
-            <h1 class="animating-text-container-header-second">Bu da yüksək sürətli internet deməkdir.</h1>
-        </div>
-
-
-        <div class="animation-text-second-container">
-            <h1 class="animation-text-header">Limitsiz</h1>
-            <h1 class="animation-text-header-1">Kəsintisiz</h1>
-            <h1 class="animation-text-header-2">Sürətli</h1>
-        </div>
-
-        <div id="mobile-trigger">
-
-        </div>
-    </div> -->
     <div class="section-mobile">
         <div class="phone-border">
             <img src="./img/smartphoneCover.webp" class="smartphone-img" alt="smartphone">
@@ -118,7 +58,7 @@
                         <div class="header-center-animated-container">
                             <h1 class="header-center-animated">Fiber Optik Internetdən həzz al!</h1>
                         </div>
-                        
+
                     </div>
 
                     <div id="rectangle"></div>
@@ -136,7 +76,7 @@
                 <h1 class="phone-animated-header-benefit">Limitsiz</h1>
                 <h1 class="phone-animated-header-benefit-1">Kəsintisiz</h1>
                 <h1 class="phone-animated-header-benefit-2">Sürətli</h1>
-                </div>
+            </div>
         </div>
         <div id="apple-menu">
             <div id="apple-menu-list">
@@ -227,7 +167,10 @@
     <div class="section-tv">
         <div class="tv-border">
             <img src="./img/tv.png" class="tv-img" alt="tv">
-            <img src="./img/winter.jpg" class="winter-img" alt="tv">
+            <div class="winter-img">
+
+            </div>
+            <!-- <img src="./img/winter.jpg" class="winter-img" alt="tv"> -->
             <div class="tv-text-container">
                 <h1 class="tv-text-header">Sevdiyiniz filmləri</h1>
                 <h1 class="tv-text-header-2">Full HD izləyin</h1>
@@ -240,22 +183,66 @@
         </div>
     </div>
 
+    <div class="section-contact">
+        <div id="contact-trigger"></div>
+        <h1 class="contact-header">Lorem Ipsum Testing Header again</h1>
+        <h1 class="contact-header-fixed">Bizimlə əlaqə</h1>
+        <div class="contact-cards-container">
+            <div class="contact-box contact-info">
+
+                <div class="gradient-text-container">
+                    <i class="far fa-clock icon-clock"></i>
+                    <span class="gr-text-big">24/7 </span>
+                    <span class="gr-text-small">fasiləsiz xidmət</span>
+                </div>
+                <div class="email-text-container">
+                    <i class="far fa-envelope icon-envelope"></i>
+                    <span>contact@portflix.com</span>
+                </div>
+                <div class="phone-text-container">
+                    <i class="fas fa-mobile-alt icon-phone"></i>
+                    <span>+994553341384</span>
+                </div>
+                <div class="phone-text-container">
+                    <i class="fas fa-map-marker-alt icon-map"></i>
+                    <span>S.S. Axundov 7c, Bakı 1115, Azərbaycan</span>
+                </div>
+                
+            </div>
+            <div class="contact-box contact-form">
+                <div class="form__group">
+                    <div class="input-container">
+                        <input type="text" class="form__field" placeholder="Ünvan" name="name" id="name" required>
+                        <label for="name" class="form__label">Ünvan</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" class="form__field" placeholder="Əlaqə nömrəsi" name="phone" id="phone"
+                            required>
+                        <label for="phone" class="form__label">Əlaqə nömrəsi</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" class="form__field" placeholder="Mesaj" name="message" id="message" required>
+                        <label for="message" class="form__label">Mesaj</label>
+                    </div>
+
+                    <div class="button-container" style="text-align: center;">
+                        <a href="#" class="BlueGlow-btn">Göndər</a>
+                    </div>
+                </div>
 
 
+            </div>
 
+        </div>
+    </div>
 
-    <footer style="background-color: blueviolet; margin-top: 100vh;">
-        <h1>Woooooo</h1>
+    <footer>
+        <div class="footer-width">
+            <p class="footer-text">Ətraflı məlumat üçün +994553341384 mobil nömrəsi ilə əlaqə saxlayın</p>
+            <div class="footer-divider"></div>
+            <p class="copyright">2021 Portflix MMC © Müəllif hüquqları qorunur </p>
+        </div>
     </footer>
-
-
-
-
-
-
-
-
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
         integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
@@ -287,7 +274,7 @@
     <script src="./js/movement.js"></script>
     <script src="./js/movements1.js"></script>
     <script src="./js/movements3.js"></script>
-    <!-- <script src="./js/movements2.js"></script> -->
+    <script src="./js/movements2.js"></script>
     <!-- <script src="./js/movements5.js"></script> -->
     <script src="./js/movements6.js"></script>
     <script src="./js/images.js"></script>

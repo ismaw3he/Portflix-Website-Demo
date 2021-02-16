@@ -18,17 +18,52 @@
 const tween2 = new TimelineLite();
 
 
+tween2.add(
+    TweenLite.to('.contact-header',400 ,{
+        opacity: 1,
+        transform: "translateY(-200px)"
+    },0)
+)
+tween2.add(
+    TweenLite.to('.contact-header',400 ,{
+        opacity: 0,
+        transform: "translateY(-600px)"
+    },0)
+)
+tween2.add(
+    TweenLite.to('.contact-header-fixed',100 ,{
+        opacity: 1
+    },0)
+)
+// tween2.add(
+//     TweenLite.to('.contact-cards-container',400 ,{
+//         opacity: 1,
+//         transform: "translateY(0px)"
+//     },0)
+// )
 
+tween2.add(
+    TweenLite.to('.contact-info',200 ,{
+        opacity: 1,
+        transform: "translateX(0px)"
+    },0)
+)
 
+tween2.add(
+    TweenLite.to('.contact-form',200 ,{
+        opacity: 1,
+        transform: "translateX(0px)"
+    },0)
+)
 const controller2 = new ScrollMagic.Controller();
 
 const scene2 = new ScrollMagic.Scene({
-    triggerElement: '#text-trigger',
-    duration: 1200,
-    triggerHook: 0.6
+    triggerElement: '#contact-trigger',
+    duration: 700,
+    triggerHook: 1
 
 })
 .setTween(tween2)
-.addIndicators()
-.setPin('#text-trigger')
+// .addIndicators()
+// .setPin('#contact-trigger')
 .addTo(controller2)

@@ -20,7 +20,16 @@
 //     ]
 // }
 const tween6 = new TimelineLite();
-
+tween6.add(
+    TweenLite.to('.winter-img', 10 ,{
+        // bezier: flightPath6,
+        // ease: Power1.easeInOut,
+        backgroundAttachment: "scroll",
+        height: "870px",
+        width: "101%",
+        // backgroundSize: "1620px 900px"
+    })
+)
 tween6.add(
     TweenLite.to('.tv-border', 200 ,{
         // bezier: flightPath6,
@@ -59,6 +68,12 @@ tween6.add(
 tween6.add(
     TweenLite.to('#canvas-container',200 ,{
         opacity: 1
+    },0)
+)
+tween6.add(
+    TweenLite.to('#hero-lightpass',200 ,{
+        opacity: 1,
+        display: "block"
     },0)
 )
 
