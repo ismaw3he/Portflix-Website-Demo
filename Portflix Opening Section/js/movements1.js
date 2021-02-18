@@ -121,7 +121,20 @@ tween1.add(
             // backgroundImage: 'url("../img/smartphone.png")  '
     })
 )
-
+tween1.add(
+    TweenLite.to('.smartphone-img', 100 ,{
+        // bezier: flightPath6,
+        // ease: Power1.easeInOut,
+        transform: "scale(1)"
+    })
+)
+tween1.add(
+    TweenLite.to('.mobile-interior', 10 ,{
+        // bezier: flightPath6,
+        // ease: Power1.easeInOut,
+        width: "1640px",
+    })
+)
 tween1.add(
     TweenLite.to('.phone-border', 500 ,{
         // bezier: flightPath6,
@@ -141,7 +154,7 @@ tween1.add(
     TweenLite.to('.mobile-interior', 100 ,{
         // bezier: flightPath6,
         // ease: Power1.easeInOut,
-        background: "none"
+        background: "none",
     })
 )
 

@@ -391,7 +391,7 @@ header h1 {
 /* ***************************Updated version************************ */
 
 .section-mobile {
-    height: 670vh;
+    height: 4800px;
     background-color: white;
     position: sticky;
     top: 0;
@@ -413,6 +413,7 @@ header h1 {
     height: 3349px;
     /* left: -576px; */
     left: -615px;
+    transform: scale(2.5);
 }
 
 .mobile-interior {
@@ -734,11 +735,13 @@ header h1 {
 .tv-border {
     width: 100%;
     position: relative;
+    height: 800px;
 }
 
 .tv-img {
     position: absolute;
-    width: 102%;
+    width: calc(102% + 20px);
+    height: calc(100% + 300px);
     top: -25px;
     left: -25px;
 }
@@ -746,16 +749,16 @@ header h1 {
 .winter-img {
     position: absolute;
     width: 102%;
-    height: 820px;
+    height: 960px;
     background-image: url("../img/winter.jpg");
     background-attachment: fixed;
     /* transition: all 0.1s; */
-    background-size: 1620px 900px;
+    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     top: -18px;
     left: -17px;
     z-index: -1;
-    background-color: pink;
 }
 
 #tv-trigger {
@@ -767,7 +770,7 @@ header h1 {
 
 .tv-text-container {
     position: absolute;
-    bottom: 0;
+    top: 0;
     width: 100%;
     color: white;
     font-size: 100px;
@@ -780,7 +783,7 @@ header h1 {
 
 .tv-text-header-2 {
     opacity: 0;
-    transform: translateY(1500px);
+    transform: translateY(1000px);
 }
 
 #hero-lightpass {
