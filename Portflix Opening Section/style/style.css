@@ -722,7 +722,7 @@ header h1 {
 /* ***********Section TV *********** */
 
 .section-tv {
-    height: 450vh;
+    height: 2400px;
     background-color: #08080a;
     position: sticky;
     top: 0;
@@ -740,18 +740,18 @@ header h1 {
 
 .tv-img {
     position: absolute;
-    width: calc(102% + 20px);
-    height: calc(100% + 300px);
+    width: 1548px;
+    height: 1105px;
     top: -25px;
     left: -25px;
 }
 
 .winter-img {
     position: absolute;
-    width: 102%;
-    height: 960px;
+    width: 1535px;
+    height: 965px;
     background-image: url("../img/winter.jpg");
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     /* transition: all 0.1s; */
     background-size: cover;
     background-position: center;
@@ -765,7 +765,7 @@ header h1 {
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 170px;
+    top: 0px;
 }
 
 .tv-text-container {
@@ -1029,6 +1029,172 @@ footer {
     margin: 10px 0;
 }
 
+@media only screen and (max-width: 1400px) {
+    .phone-animated-text-container {
+        right: -2300px;
+    }
+    .phone-animated-text-container-benefits {
+        left: -2000px;
+    }
+    .price-category-list {
+        font-size: 22px;
+    }
+    .service {
+        font-size: 55px;
+    }
+    .tv-text-container {
+        width: 106%;
+        font-size: 90px;
+        top: 50px;
+    }
+    .section-tv {
+        height: 2100px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .service {
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width: 1250px) {
+    .section-mobile {
+        height: 4700px;
+    }
+    .phone-animated-text-container {
+        right: -2450px;
+    }
+    .phone-animated-header {
+        font-size: 200px;
+    }
+    .phone-animated-paragraph {
+        font-size: 155px;
+    }
+    .phone-animated-header-second {
+        font-size: 200px;
+    }
+    .gradient-text-container {
+        font-size: 38px;
+    }
+    .email-text-container, .phone-text-container {
+        font-size: 21px;
+    }
+}
 @media only screen and (max-width: 1200px) {
-        
+    .header-center-animated-container {
+        font-size: 25px;
+        margin-left: 60px;
+    }
+    #apple-menu {
+        width: 650px;
+        height: 77px;
+        left: calc(50% - 325px);
+    }
+    .apps {
+        width: 50px;
+        height: 40px;
+    }
+    #gmail{
+        width: 46px;
+        height: 40px;
+    }
+    #facebook{
+        width: 40px;
+        height: 40px;
+    }
+    #instagram{
+        width: 40px;
+        height: 40px;
+    }
+    #whatsapp{
+        width: 40px;
+    }
+    #youtube{
+        width: 50px;
+        height: 36px;
+    }
+    .smartphone-img {
+        width: 2050px;
+        top: -440px;
+        height: 3000px;
+        left: -370px;
+    }
+    .speedtestBCK {
+        height: 2800px;
+        width: 1505px;
+    }
+    .phone-animated-text-container {
+        top: -300px;
+        right: -2530px;
+    }
+    .mobile-interior {
+        height: 3100px;
+        top: -407px;
+        left: 145px;
+    }
+    .youtubeBCK {
+        height: 2790px;
+        width: 1520px;
+    }
+    .section-mobile {
+        height: 4500px;
+    }
+    .service {
+        font-size: 46px;
+    }
+    .price {
+        font-size: 27px;
+    }
+    .price-category-list {
+        font-size: 20px;
+    }
+    .prices-content-info {
+        font-size: 19px;
+    }
+    .prices-section-header {
+        font-size: 31px;
+    }
+    .phone-animated-paragraph {
+        font-size: 140px;
+    }
+    .tv-text-container {
+        width: 114%;
+        font-size: 80px;
+    }
+    .contact-header {
+        font-size: 55px;
+    }
+    .contact-header-fixed {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+    .gr-text-small {
+        font-size: 26px;
+    }
+    .gradient-text-container {
+        font-size: 33px;
+    }
+    .icon-envelope,
+    .icon-clock,
+    .icon-phone,
+    .icon-map {
+        font-size: 23px;
+    }
+    .email-text-container, .phone-text-container {
+        font-size: 20px;
+    }
+    .tv-img {
+        width: 1548px;
+        height: 1105px;
+    }
+    .winter-img {
+        width: 1535px;
+        height: 965px;
+    }
+    .phone-animated-text-container-benefits {
+        left: -1600px;
+    }
+    .section-tv {
+        height: 2193px;
+    }
 }

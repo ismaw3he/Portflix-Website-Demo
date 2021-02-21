@@ -55,8 +55,6 @@ tween1.add(
         opacity: 0,
     })
 )
-
-
 tween1.add(
     TweenLite.to('#chrome', 70 ,{
         // width: "760px"    ,
@@ -209,12 +207,17 @@ tween1.add(
         opacity: 0
     })
 )
-
+console.log("test");
+console.log(window.innerWidth);
+let phonePositionX = 300;
+if(window.innerWidth< 1199){
+    phonePositionX = 200;
+}
 tween1.add(
     TweenLite.to('.phone-border', 1500 ,{
         // bezier: flightPath6,
         // ease: Power1.easeInOut,
-        transform: "translateY(3650px) translateX(300px) scale(0.3)"
+        transform: `translateY(3650px) translateX(${phonePositionX}px) scale(0.3)`
     })
 )
 

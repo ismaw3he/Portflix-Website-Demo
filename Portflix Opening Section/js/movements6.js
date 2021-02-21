@@ -1,15 +1,15 @@
 
 const tween6 = new TimelineLite();
+// tween6.add(
+//     TweenLite.to('.winter-img', 1 ,{
+//         // bezier: flightPath6,
+//         // ease: Power1.easeInOut,
+//         backgroundAttachment: "scroll",
+//         // backgroundSize: "1620px 900px"
+//     })
+// )
 tween6.add(
-    TweenLite.to('.winter-img', 1 ,{
-        // bezier: flightPath6,
-        // ease: Power1.easeInOut,
-        backgroundAttachment: "scroll",
-        // backgroundSize: "1620px 900px"
-    })
-)
-tween6.add(
-    TweenLite.to('.tv-border', 200 ,{
+    TweenLite.to('.tv-border', 150 ,{
         // bezier: flightPath6,
         // ease: Power1.easeInOut,
         transform: "translateY(500px) scale(0.4)"
@@ -44,7 +44,7 @@ tween6.add(
 )
 
 tween6.add(
-    TweenLite.to('#canvas-container',200 ,{
+    TweenLite.to('#canvas-container',20 ,{
         opacity: 1
     },0)
 )
@@ -60,8 +60,8 @@ const controller6 = new ScrollMagic.Controller();
 
 const scene6 = new ScrollMagic.Scene({
     triggerElement: '#tv-trigger',
-    duration: 1000,
-    triggerHook: 0.2 
+    duration: 1300,
+    triggerHook: 0
 
 })
 .setTween(tween6)

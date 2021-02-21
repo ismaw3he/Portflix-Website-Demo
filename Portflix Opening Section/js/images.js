@@ -25,25 +25,26 @@ img.onload=function(){
 }
 
 const updateImage = index => {
+  // console.log(index)
   if(index === 38 || index < 3){
     container.style.opacity = "0"
   }
   else if(index <= 38){
     container.style.opacity = "1"
   }
-  console.log(index);
   img.src = currentFrame(index);
   // console.log(img.src);
   context.drawImage(img, 0, 0, 1741, 979, 0 , 0 , 1741, 979);
 }
 
 window.addEventListener('scroll', () => {  
-  let scrollTop = container.getBoundingClientRect().bottom;
+  let scrollTop = container.getBoundingClientRect().top;
+  // console.log(scrollTop)
   if(scrollTop < 0){
     scrollTop = Math.abs(scrollTop);
-    console.log(scrollTop);
+    // console.log(scrollTop);
   
-    const maxScrollTop =   2 * window.innerHeight;
+    const maxScrollTop =   window.innerHeight;
     // console.log(maxScrollTop);
     // console.log(window);
     // console.log(getCoords(container).top)
@@ -52,7 +53,7 @@ window.addEventListener('scroll', () => {
       frameCount - 1,
       Math.ceil(scrollFraction * frameCount)
     );
-    
+    console.log(scrollFraction)
     requestAnimationFrame(() => updateImage(frameIndex + 1))
   }
 
