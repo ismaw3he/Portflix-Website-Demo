@@ -722,7 +722,7 @@ header h1 {
 /* ***********Section TV *********** */
 
 .section-tv {
-    height: 2400px;
+    height: 2250px;
     background-color: #08080a;
     position: sticky;
     top: 0;
@@ -731,33 +731,40 @@ header h1 {
     z-index: -1;
     overflow: hidden;
 }
-
-.tv-border {
+.tv-container{
     width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.tv-border {
+    width: 800px;
     position: relative;
-    height: 800px;
+    height: 500px;
 }
 
 .tv-img {
     position: absolute;
-    width: 1548px;
-    height: 1105px;
-    top: -25px;
-    left: -25px;
+    width: 800px;
+    height: 500px;
+    
+    /* top: -25px;
+    left: -25px; */
 }
 
 .winter-img {
     position: absolute;
-    width: 1535px;
-    height: 965px;
+    width: 800px;
+    height: 440px;
     background-image: url("../img/winter.jpg");
     /* background-attachment: fixed; */
     /* transition: all 0.1s; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    top: -18px;
-    left: -17px;
+    /* top: -18px;
+    left: -17px; */
     z-index: -1;
 }
 
@@ -773,8 +780,9 @@ header h1 {
     top: 0;
     width: 100%;
     color: white;
-    font-size: 100px;
+    font-size: 45px;
     text-align: center;
+    z-index: -2;
 }
 
 .tv-text-header {
@@ -783,7 +791,7 @@ header h1 {
 
 .tv-text-header-2 {
     opacity: 0;
-    transform: translateY(1000px);
+    transform: translateY(350px);
 }
 
 #hero-lightpass {
@@ -1043,12 +1051,24 @@ footer {
         font-size: 55px;
     }
     .tv-text-container {
-        width: 106%;
+        width: 100%;
         font-size: 90px;
         top: 50px;
     }
     .section-tv {
-        height: 2100px;
+        height: 2000px;
+    }
+    .tv-text-container {
+        font-size: 40px;
+    }
+    .tv-border,
+    .tv-img,
+    .winter-img{
+        width: 740px;
+        height: 430px;
+    }
+    .winter-img{
+        height: 380px;
     }
 }
 
@@ -1081,6 +1101,7 @@ footer {
     }
 }
 @media only screen and (max-width: 1200px) {
+    
     .header-center-animated-container {
         font-size: 25px;
         margin-left: 60px;
@@ -1157,10 +1178,6 @@ footer {
     .phone-animated-paragraph {
         font-size: 140px;
     }
-    .tv-text-container {
-        width: 114%;
-        font-size: 80px;
-    }
     .contact-header {
         font-size: 55px;
     }
@@ -1183,18 +1200,220 @@ footer {
     .email-text-container, .phone-text-container {
         font-size: 20px;
     }
+    .tv-text-container {
+        width: 100%;
+        font-size: 33px;
+    }
+    .tv-border{
+        width: 600px;
+    }
     .tv-img {
-        width: 1548px;
-        height: 1105px;
+        width: 600px;
+        height: 380px;
     }
     .winter-img {
-        width: 1535px;
-        height: 965px;
+        width: 600px;
+        height: 335px;
     }
     .phone-animated-text-container-benefits {
         left: -1600px;
     }
-    .section-tv {
-        height: 2193px;
+    .header-center-animated-container {
+        transform: translateY(550px);
+    }
+    .phone-border{
+        transform: translateX(-150px);
     }
 }
+
+@media only screen and (max-width: 1300px) {
+    .service {
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width: 1250px) {
+    .section-mobile {
+        height: 4700px;
+    }
+    .phone-animated-text-container {
+        right: -2450px;
+    }
+    .phone-animated-header {
+        font-size: 200px;
+    }
+    .phone-animated-paragraph {
+        font-size: 155px;
+    }
+    .phone-animated-header-second {
+        font-size: 200px;
+    }
+    .gradient-text-container {
+        font-size: 38px;
+    }
+    .email-text-container, .phone-text-container {
+        font-size: 21px;
+    }
+}
+@media only screen and (max-width: 1050px) {
+    .smartphone-img {
+        width: 1830px;
+        height: 2690px;
+    }    
+    .speedtestBCK,
+    .youtubeBCK {
+        height: 2505px;
+        width: 1342px;
+    }
+    .header-center-animated-container {
+        margin: 0;
+    }
+    .mobile-interior {
+        left: 95px;
+    }
+    .phone-animated-header {
+        font-size: 140px;
+    }
+    .phone-animated-text-container {
+        right: -2080px;
+        width: 1450px;
+    }
+    .phone-animated-paragraph {
+        font-size: 120px;
+    }
+    .phone-animated-header-second {
+        font-size: 140px;
+    }
+    .section-mobile{
+        height: 4500px;
+    }
+    .price-category-list {
+        font-size: 17px;
+    }
+    .prices-content-info {
+        width: 640px;
+        font-size: 17px;
+    }
+    .price-single-container {
+        margin-right: 25px;
+    }
+    .service {
+        font-size: 42px;
+    }
+    .price {
+        font-size: 20px;
+    }
+    .price-category-container {
+        height: 85px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .header-center-animated-container {
+        margin-left: -33px;
+    }
+    .phone-animated-text-container-benefits {
+        left: -1300px;
+        font-size: 130px;
+    }
+    .price-category-item {
+        margin-right: 50px;
+    }
+    .service {
+        font-size: 32px;
+    }
+    .price {
+        font-size: 19px;
+    }
+    .contact-header {
+        font-size: 48px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .header-center-animated-container {
+        margin-left: -104px;
+    }
+    #rectangle {
+        width: 7px;
+        height: 4px;
+    }
+    #apple-menu {
+        width: 510px;
+        height: 70px;
+        left: calc(50% - 255px);
+    }
+    .apps {
+        width: 40px;
+        height: 42px;
+    }
+    #facebook {
+        width: 34px;
+        height: 34px;
+    }
+    #gmail {
+        width: 37px;
+        height: 32px;
+    }
+    #speed {
+        width: 38px;
+    }
+    #instagram {
+        width: 35px;
+        height: 35px;
+    }
+    
+    #whatsapp {
+        width: 35px;
+        height: 35px;
+    }
+    #youtube {
+        width: 44px;
+        height: 30px;
+    }
+    .smartphone-img {
+        width: 1580px;
+        height: 2365px;
+        left: -308px;
+    }
+    .speedtestBCK, .youtubeBCK {
+        height: 2205px;
+        top: -5px;
+        width: 1155px;
+    }
+    .phone-animated-text-container {
+        right: -1600px;
+        width: 1065px;
+    }
+    .phone-animated-header {
+        font-size: 125px;
+    }
+    .phone-animated-paragraph {
+        font-size: 90px;
+    }
+    .phone-animated-header-second {
+        font-size: 120px;
+        width: 2000px;
+        margin-left: -1100px;
+    }
+    .section-mobile{
+        height: 3800px;
+    }
+    .phone-animated-text-container-benefits {
+        left: -1125px;
+        font-size: 130px;
+    }
+    .phone-animated-header-benefit-2 {
+        top: 1920px;
+    }
+    .section-contact {
+        height: 1000px;
+    }
+    .contact-cards-container {
+        flex-direction: column;
+    }
+    .contact-box {
+        width: 80%;
+        height: 360px;
+    }
+}
+
+

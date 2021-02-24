@@ -1,4 +1,11 @@
-const flightPath1 = {
+console.log("test");
+console.log(window.innerWidth);
+let phonePositionX = 300;
+let mobileInterior = 1640;
+let phoneBorderLastPosition = -400;
+let duration = 4000;
+let phonePositionY = 3650;
+let flightPath1 = {
     curviness: 1.25,
     autoRotate: true,
     values: [
@@ -15,6 +22,101 @@ const flightPath1 = {
         {x: 450, y: 810},
     ]
 }
+if(window.innerWidth < 800){
+    phonePositionY = 3100;
+    duration = 3500;
+    phoneBorderLastPosition = -230;
+    mobileInterior = 1150;
+    phonePositionX = 100;
+    flightPath1 = {
+        curviness: 1.25,
+        autoRotate: true,
+        values: [
+            {x: 100, y: 300},
+            {x: 150, y: 350},
+            {x: 200, y: 400},
+            {x: 400, y: 600},
+            {x: 750, y: 520},
+            {x: 800, y: 450},
+            {x: 750, y: 350},
+            {x: 100, y: 520},
+            {x: 150, y: 1000},
+            {x: 250, y: 1040}
+        ]
+    }
+    
+
+}
+else if(window.innerWidth < 1050){
+
+    phoneBorderLastPosition = -320;
+    mobileInterior = 1340;
+    phonePositionX = 180;
+    flightPath1 = {
+        curviness: 1.25,
+        autoRotate: true,
+        values: [
+            {x: 100, y: 300},
+            {x: 150, y: 350},
+            {x: 200, y: 400},
+            {x: 400, y: 600},
+            {x: 750, y: 520},
+            {x: 800, y: 450},
+            {x: 750, y: 350},
+            {x: 100, y: 520},
+            {x: 200, y: 1000},
+            {x: 300, y: 1040}
+        ]
+    }
+    if(window.innerWidth < 900){
+        phonePositionX = 125;
+
+        flightPath1 = {
+            curviness: 1.25,
+            autoRotate: true,
+            values: [
+                {x: 100, y: 300},
+                {x: 150, y: 350},
+                {x: 200, y: 400},
+                {x: 400, y: 600},
+                {x: 750, y: 520},
+                {x: 800, y: 450},
+                {x: 750, y: 350},
+                {x: 100, y: 520},
+                {x: 150, y: 1000},
+                {x: 250, y: 1040}
+            ]
+        }
+    }
+
+}
+else if(window.innerWidth< 1199){
+    phonePositionX = 200;
+
+    let phoneBorder = document.querySelector(".phone-border");
+    phoneBorder.style.transform = "translateX(-150px);";
+    mobileInterior = 1485;
+    
+    flightPath1 = {
+        curviness: 1.25,
+        autoRotate: true,
+        values: [
+            {x: 100, y: 300},
+            {x: 150, y: 350},
+            {x: 200, y: 500},
+            {x: 400, y: 600},
+            {x: 750, y: 520},
+            {x: 800, y: 450},
+            {x: 750, y: 350},
+            {x: 100, y: 520},
+            {x: 200, y: 1000},
+            {x: 300, y: 1050},
+            {x: 350, y: 1050},
+        ]
+    }
+}
+
+
 
 const tween1 = new TimelineLite();
 
@@ -130,14 +232,14 @@ tween1.add(
     TweenLite.to('.mobile-interior', 10 ,{
         // bezier: flightPath6,
         // ease: Power1.easeInOut,
-        width: "1640px",
+        width: `${mobileInterior}px`,
     })
 )
 tween1.add(
     TweenLite.to('.phone-border', 500 ,{
         // bezier: flightPath6,
         // ease: Power1.easeInOut,
-        transform: "translateY(1800px) translateX(-400px) scale(0.3)"
+        transform: `translateY(1800px) translateX(${phoneBorderLastPosition}px) scale(0.3)`
     })
 )
 
@@ -207,17 +309,12 @@ tween1.add(
         opacity: 0
     })
 )
-console.log("test");
-console.log(window.innerWidth);
-let phonePositionX = 300;
-if(window.innerWidth< 1199){
-    phonePositionX = 200;
-}
+
 tween1.add(
     TweenLite.to('.phone-border', 1500 ,{
         // bezier: flightPath6,
         // ease: Power1.easeInOut,
-        transform: `translateY(3650px) translateX(${phonePositionX}px) scale(0.3)`
+        transform: `translateY(${phonePositionY}px) translateX(${phonePositionX}px) scale(0.3)`
     })
 )
 
@@ -266,7 +363,7 @@ const controller1 = new ScrollMagic.Controller();
 
 const scene1 = new ScrollMagic.Scene({
     triggerElement: '#phone-trigger',
-    duration: 4000,
+    duration: duration,
     triggerHook: 0.2 
 
 })
